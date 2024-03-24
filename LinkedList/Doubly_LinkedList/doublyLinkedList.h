@@ -105,14 +105,12 @@ void doublyLinkedList<t>::insertLast(t newItem)
 {
   Node<t>* newNode = new Node<t>;
   newNode->item = newItem;
+
   if (count == 0)
   {
-    if (count == 0)
-    {
       newNode->prev = NULL;
       newNode->next = NULL;
       first = last = newNode;
-    }
   }
   else
   {
